@@ -12,7 +12,7 @@ const Pagination = ({ info, pageNumber, setPageNumber }) => {
     // };
 
     return <ReactPaginate 
-            className='pagination justify-content-center gap-4 my-4'
+            className={'pagination justify-content-center gap-4 my-4'}
             forcePage={pageNumber === 1 ? 0 : pageNumber - 1}
             previousLabel='Prev'
             nextLabel='Next'
@@ -25,6 +25,7 @@ const Pagination = ({ info, pageNumber, setPageNumber }) => {
                 setPageNumber(data.selected + 1);
             }}
             pageCount={info?.pages}
+            
          />
         // <div className='container d-flex justify-content-center gap-5 my-5'>
         //     <button onClick={prev} className='btn btn-primary'>Prev</button>

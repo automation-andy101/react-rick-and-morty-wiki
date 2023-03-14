@@ -37,10 +37,12 @@ const Cards = ({ results }) => {
                             );
                         }
                         else {
-                            <div className={`${styles.badge} position-absolute badge bg-secondary`}>
-                                {status}
-                            </div>
-                        };
+                            return (
+                                <div className={`${styles.badge} position-absolute badge bg-secondary`}>
+                                    {status}
+                                </div>
+                            );
+                        }           
                     })()}
                 </div> )
         })
